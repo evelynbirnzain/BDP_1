@@ -21,6 +21,7 @@ with open(INPUT_FILE) as f:
 
 for message in messages:
     payload = json.dumps(message).encode('utf-8')
+    print(payload)
     future = producer.send(KAFKA_TOPIC, payload)
     result = future.get(timeout=60)
     print(result)

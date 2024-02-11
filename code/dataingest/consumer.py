@@ -12,6 +12,8 @@ MONGO_USERNAME = os.getenv('MONGO_USERNAME')
 MONGO_PASSWORD = os.getenv('MONGO_PASSWORD')
 MONGO_HOST = os.getenv('MONGO_HOST')
 
+# TODO Kafka make sure that every message is only consumed once -> group?
+
 if not KAFKA_BROKER or not KAFKA_TOPIC or not MONGO_USERNAME or not MONGO_PASSWORD or not MONGO_HOST:
     raise Exception("KAFKA_BROKER, KAFKA_TOPIC, MONGO_USERNAME, MONGO_PASSWORD and MONGO_HOST must be set")
 

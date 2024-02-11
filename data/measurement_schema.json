@@ -1,0 +1,112 @@
+{
+  "title": "Measurement schema",
+  "bsonType": "object",
+  "properties": {
+    "id": {
+      "bsonType": "number"
+    },
+    "sampling_rate": {
+      "bsonType": "number"
+    },
+    "timestamp": {
+      "bsonType": "timestamp"
+    },
+    "location": {
+      "bsonType": "object",
+      "properties": {
+        "id": {
+          "bsonType": "number"
+        },
+        "latitude": {
+          "bsonType": "string"
+        },
+        "longitude": {
+          "bsonType": "string"
+        },
+        "altitude": {
+          "bsonType": "string"
+        },
+        "country": {
+          "bsonType": "string"
+        },
+        "exact_location": {
+          "bsonType": "number"
+        },
+        "indoor": {
+          "bsonType": "number"
+        }
+      },
+      "required": [
+        "id",
+        "latitude",
+        "longitude",
+        "altitude",
+        "country",
+        "exact_location",
+        "indoor"
+      ]
+    },
+    "sensor": {
+      "bsonType": "object",
+      "properties": {
+        "id": {
+          "bsonType": "number"
+        },
+        "pin": {
+          "bsonType": "integer"
+        },
+        "sensor_bsonType": {
+          "bsonType": "object",
+          "properties": {
+            "id": {
+              "bsonType": "number"
+            },
+            "name": {
+              "bsonType": "string"
+            },
+            "manufacturer": {
+              "bsonType": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "manufacturer"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "pin",
+        "sensor_bsonType"
+      ]
+    },
+    "sensordatavalues": {
+      "bsonType": "array",
+      "items": {
+        "bsonType": "object",
+        "properties": {
+          "id": {
+            "bsonType": "number"
+          },
+          "value": "number",
+          "value_bsonType": {
+            "bsonType": "string"
+          }
+        },
+        "required": [
+          "value",
+          "value_bsonType"
+        ]
+      }
+    }
+  },
+  "required": [
+    "id",
+    "sampling_rate",
+    "timestamp",
+    "location",
+    "sensor",
+    "sensordatavalues"
+  ]
+}
