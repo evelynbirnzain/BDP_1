@@ -9,6 +9,17 @@ It is a free form. you can add:
 
 The best way is to have your report written in the form of point-to-point answering the assignment.
 
+The simple big data platform to be designed and developed, called ``mysimbdp``, will have the following key
+components:
+
+* a key component to store and manage data called ``mysimbdp-coredms``. This component is a platform-as-a-service. Tenants
+  can get shared or dedicated instances of ``mysimbdp-coredms`` for their usage.
+* a key component, called ``mysimbdp-daas``, of which APIs can be called by external data producers/consumers to store/read
+  data into/from ``mysimbdp-coredms``. This component is a platform-as-a-service. Tenants can get shared or dedicated
+  instances of ``mysimbdp-daas`` for their usage.
+* a key component, called ``mysimbdp-dataingest``, to read data from data sources (files/external databases/messaging
+  systems) of the tenant/customer and then store the data by calling APIs of ``mysimbdp-coredms``.
+
 ## Part 1: Design
 
 1. Explain your choice of the application domain and generic types of data to be supported and
@@ -22,13 +33,13 @@ The best way is to have your report written in the form of point-to-point answer
 3. Explain a configuration of a cluster of nodes for ``mysimbdp-coredms`` so that you prevent a single-
    point-of-failure problem for ``mysimbdp-coredms`` for your tenants. (1 point)
 4. You decide a pre-defined level of data replication for your tenants/customers. Explain the level of
-   replication in your design, how many nodes are needed in the deployment of mysimbdp-coredms for
+   replication in your design, how many nodes are needed in the deployment of ``mysimbdp-coredms`` for
    your choice so that this component can work property (e.g., the system still supports redundancy in
    the case of a failure of a node). (1 point)
 5. Consider the platform data center, the tenant data source locations and the network between them.
    Explain where would you deploy ``mysimbdp-dataingest`` to allow your tenants using ``mysimbdp-dataingest`` to push
    data into ``mysimbdp``, based on which assumptions you have. Explain the
-   performance pros and cons of the deployment place, given the posibilities you have. (1 point)
+   performance pros and cons of the deployment place, given the possibilities you have. (1 point)
 
 ## Part 2: Implementation
 
@@ -43,8 +54,8 @@ The best way is to have your report written in the form of point-to-point answer
    ``mysimbdp-coredms``. Explain what would be the atomic data element/unit to be stored. Explain
    possible consistency options for writing data in your ``mysimdbp-dataingest``. (1 point)
 4. Given your deployment environment, measure and show the performance (e.g., response time,
-   throughputs, and failure) of the tests for 1,5, 10, .., n of concurrent ``mysimbdp-dataingest writing
-   data into mysimbdp-coredms`` with different speeds/velocities together with the change of the
+   throughputs, and failure) of the tests for 1,5, 10, .., n of concurrent ``mysimbdp-dataingest`` writing
+   data into ``mysimbdp-coredms`` with different speeds/velocities together with the change of the
    number of nodes of ``mysimbdp-coredms``. Indicate any performance differences due to the choice of
    consistency options. (1 point)
 5. Observing the performance and failure problems when you push a lot of data into ``mysimbdp-coredms`` (you do not need
