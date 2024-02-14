@@ -14,8 +14,7 @@ MONGO_URL="mongodb+srv://<username>:<password>@<host>/<dbname>?retryWrites=true&
 
 ### Kafka
 
-* Set up any Kafka instance. A local testing instance can be set up using the `docker-compose_kafka.yml` file in
-  the `code` directory.
+* Set up any Kafka instance. A local testing instance can be set up using the `code/docker-compose_kafka.yml` file.
 * Add the broker URL to the `.env` file.
 
 ```bash
@@ -23,21 +22,34 @@ MONGO_URL="mongodb+srv://<username>:<password>@<host>/<dbname>?retryWrites=true&
 KAFKA_BROKER_URL="localhost:9092"
 ```
 
-### Ingestor
-
-Run any number of ingestors using the `ingestor.py` script. The ingestors will poll Kafka and measurements into
-the `coredms`.
+* Create a topic "measurements" with an appropriate number of partitions and replication factor.E.g. when using the
+  local Kafka, use the following:
 
 ```bash
-    python3 code/ingestor.py
+docker-compose -f code/
+docker-compose_kafka.yml exec kafka kafka-topics.sh --create --topic measurements --partitions 32 --replication-factor 1 --bootstrap-server kafka:9092
+```
+
+### Ingestor
+
+* Create a venv and install the dependencies.
+* Run any number of ingestors using the `ingestor.py` script. The ingestors will poll Kafka and insert measurements into
+  the `coredms`.
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r code/requirements.txt
+
+python3 code/ingestor.py
 ```
 
 ## Simulate sensors
 
-Run `sensor.py` to simulate the sensors. The script will produce messages to the Kafka topic.
+Run `sensor.py` to simulate the sensors using the same venv. The script will produce messages to the Kafka topic.
 
 ```bash
-    python3 code/sensor.py
+python3 code/sensor.py
 ```
 
 

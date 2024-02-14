@@ -182,9 +182,9 @@ or the `ingestor` itself.
 ## Part 3: Extension
 
 _1. Using your ``mysimdbp-coredms``, a single tenant can run ``mysimbdp-dataingest`` to create many
-   different databases/datasets. The tenant would like to record basic lineage of the ingested data,
-   explain what types of metadata about data lineage you would like to support and how would you do
-   this. Provide one example of a lineage data. (1 point)_
+different databases/datasets. The tenant would like to record basic lineage of the ingested data,
+explain what types of metadata about data lineage you would like to support and how would you do
+this. Provide one example of a lineage data. (1 point)_
 
 Given that for now, the platform only supports storing data without any processing, it should be sufficient to store
 very basic lineage data. This could include...
@@ -221,12 +221,13 @@ itself with each measurement; the Ingestor would just need to add the timestamps
 similarly in that the desired source information needs to be transmitted with the data points.
 
 For more complicated metadata or if there are processing pipelines in use it might make sense to create a separate
-schema/document that references the actual data point and contains information about when and how the data as processed.
+collection for metadata. The metadata document could then just reference the actual data point (or the other way around)
+and contains information about when and how the data was processed.
 
 _2. Assume that each of your tenants/users will need a dedicated ``mysimbdp-coredms``. Design the data
-   schema of service information for ``mysimbdp-coredms`` that can be published into an existing registry
-   (like ZooKeeper, consul or etcd) so that you can find information about which ``mysimbdp-coredms`` is
-   for which tenants/users. (1 point)_
+schema of service information for ``mysimbdp-coredms`` that can be published into an existing registry
+(like ZooKeeper, consul or etcd) so that you can find information about which ``mysimbdp-coredms`` is
+for which tenants/users. (1 point)_
 
 Following the example from the tutorials, I would create a consul config as follows and just tag the service with the
 tenant name. The service can then be registered with the consul agent. The tenant can query consul to find the
@@ -240,29 +241,31 @@ dedicated `coredms` for them.
   ],
   "port": 27017,
   "address": "192.168.8.106",
-  "check": {}
+  "check": { 
+    // ...
+  }
 }
 ```
 
 _3. Explain how you would change the implementation of ``mysimbdp-dataingest`` (in Part 2) to integrate
-   a service discovery feature (no implementation is required). (1 point)_
+a service discovery feature (no implementation is required). (1 point)_
 
 Given that a registry like consul is used and the `coredms`s are registered with it like above, I would pass the
 respective tenant name to `dataingest` as a config parameter. It can then query the registry to find the correct
 `coredms` to connect to.
 
 _4. Assume that now only ``mysimbdp-daas`` can read and write data into ``mysimbdp-coredms``, how would
-   you change your ``mysimbdp-dataingest`` (in Part 2) to work with ``mysimbdp-daas``? (1 point)_
+you change your ``mysimbdp-dataingest`` (in Part 2) to work with ``mysimbdp-daas``? (1 point)_
 
 Given that `daas` is going to be some sort of web server, I would just change the `dataingest` to POST the data to
 the `daas` API instead of directly inserting it into the `coredms`. The `daas` would then be responsible for writing
 the data to the `coredms`.
 
 _5. Assume that the platform allows the customer to define which types of data (and) that should be
-   stored in a hot space and which should be stored in a cold space in the ``mysimbdp-coredms``. Provide
-   one example of constraints based on characteristics of data for data in a hot space vs in a cold space.
-   Explain how would you support automatically moving/extracting data from a hot space to a cold
-   space. (1 point)_
+stored in a hot space and which should be stored in a cold space in the ``mysimbdp-coredms``. Provide
+one example of constraints based on characteristics of data for data in a hot space vs in a cold space.
+Explain how would you support automatically moving/extracting data from a hot space to a cold
+space. (1 point)_
 
 Given the scenario used above, the tenant might be safe to assume that current data from the time series is accessed
 much more frequently than older data. A constraint could therefore be: "Data that was inserted more than 30 days ago

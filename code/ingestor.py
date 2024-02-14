@@ -22,7 +22,7 @@ durs = []
 for message in consumer:
     data = json.loads(message.value)
     resp = collection.insert_one(data)
-    print(f"Inserted {data['id']})")
+    print(f"Inserted {data['id']}")
 
 print(f"Finished ingestion")
 
