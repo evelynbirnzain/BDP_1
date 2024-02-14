@@ -28,16 +28,6 @@ services:
     volumes:
       - kafka_data:/tmp/bitnami/kafka
 
-  coredms:
-    image: mongo:latest
-    ports:
-      - "27017:27017"
-    volumes:
-      - /mnt:/data/db
-    environment:
-        - MONGO_INITDB_ROOT_USERNAME=admin
-        - MONGO_INITDB_ROOT_PASSWORD=password
-
 volumes:
   kafka_data:
     driver: local
