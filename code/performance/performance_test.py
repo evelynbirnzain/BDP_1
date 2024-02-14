@@ -8,7 +8,8 @@ def test(num_instances):
 
     procs = multiprocessing.Pool(num_instances)
     r = procs.map_async(os.system,
-                        [f"venv\\Scripts\\python .\\code\\performance\\ingestor.py" for _ in range(num_instances)])
+                        [f"venv\\Scripts\\python .\\code\\performance\\ingestor_with_metrics.py" for _ in
+                         range(num_instances)])
 
     p = multiprocessing.Process(target=os.system, args=("venv\\Scripts\\python .\\code\\sensor.py 100",))
     p.start()

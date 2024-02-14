@@ -22,6 +22,8 @@ db_client = pymongo.MongoClient(MONGO_URL)
 db = db_client["ingestionDB"]
 collection = db["measurements"]
 
+print(f"Starting ingestion")
+
 durs = []
 for message in consumer:
     data = json.loads(message.value)
