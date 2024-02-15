@@ -32,7 +32,7 @@ docker-compose_kafka.yml exec kafka kafka-topics.sh --create --topic measurement
 
 ### Ingestor
 
-* Create a venv and install the dependencies.
+* Create a ``venv`` and install the dependencies.
 * Run any number of ingestors using the `ingestor.py` script. The ingestors will poll Kafka and insert measurements into
   the `coredms`.
 
@@ -46,7 +46,7 @@ python3 code/ingestor.py
 
 ## Simulate sensors
 
-Run `sensor.py` to simulate the sensors using the same venv. The script will produce messages to the Kafka topic.
+Run `sensor.py` to simulate the sensors using the same ``venv``. The script will produce messages to the Kafka topic.
 
 ```bash
 python3 code/sensor.py

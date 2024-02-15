@@ -1,5 +1,15 @@
 # Assignment 1 100479117
 
-> Guide line: This is the file where you will explain the structure of your assignment delivery. Remember to replace *
-*Assignment_NR** with the number of the assignment (e.g., 1, 2, 3, or 4) and **Your_STUDENTID** with your student
-> number. Remove all guidelines from the template.
+## Directory structure
+
+* [data](data): Sample dataset + schema.
+* [code](code): Source code. Includes ingestor, sensor, and test Kafka setup. The code related to performance testing is
+  in the `performance` subdirectory.
+* [logs](logs): Logs from performance testing and running the platform (several ingestors and sensors joining and
+  dropping off).
+* [report](report): Design report and deployment instructions.
+
+
+
+
+

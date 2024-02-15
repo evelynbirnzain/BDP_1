@@ -1,0 +1,152 @@
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-0 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.5.0
+INFO:kafka.conn:Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+INFO:kafka.consumer.subscription_state:Updating subscribed topics to: ('measurements',)
+INFO:root:Starting ingestion
+INFO:kafka.cluster:Group coordinator for ingestor is BrokerMetadata(nodeId='coordinator-0', host='localhost', port=9092, rack=None)
+INFO:kafka.coordinator:Discovered coordinator coordinator-0 for group ingestor
+INFO:kafka.coordinator:Starting new heartbeat thread
+INFO:kafka.coordinator.consumer:Revoking previously assigned partitions set() for group ingestor
+INFO:kafka.conn:<BrokerConnection node_id=coordinator-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=coordinator-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:kafka.coordinator:(Re-)joining group ingestor
+INFO:kafka.coordinator:Successfully joined group ingestor with generation 150
+INFO:kafka.consumer.subscription_state:Updated partition assignment: [TopicPartition(topic='measurements', partition=22), TopicPartition(topic='measurements', partition=23), TopicPartition(topic='measurements', partition=24), TopicPartition(topic='measurements', partition=25), TopicPartition(topic='measurements', partition=26), TopicPartition(topic='measurements', partition=27), TopicPartition(topic='measurements', partition=28), TopicPartition(topic='measurements', partition=29), TopicPartition(topic='measurements', partition=30), TopicPartition(topic='measurements', partition=31)]
+INFO:kafka.coordinator.consumer:Setting newly assigned partitions {TopicPartition(topic='measurements', partition=28), TopicPartition(topic='measurements', partition=31), TopicPartition(topic='measurements', partition=27), TopicPartition(topic='measurements', partition=24), TopicPartition(topic='measurements', partition=30), TopicPartition(topic='measurements', partition=23), TopicPartition(topic='measurements', partition=26), TopicPartition(topic='measurements', partition=22), TopicPartition(topic='measurements', partition=29), TopicPartition(topic='measurements', partition=25)} for group ingestor
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:root:Inserted 19168938026
+INFO:root:Inserted 19168938025
+INFO:root:Inserted 19168938022
+INFO:root:Inserted 19168938017
+INFO:root:Inserted 19168938013
+INFO:root:Inserted 19168938009
+INFO:root:Inserted 19168938004
+INFO:root:Inserted 19168938000
+INFO:root:Inserted 19168937996
+INFO:root:Inserted 19168937993
+INFO:root:Inserted 19168937990
+INFO:root:Inserted 19168937989
+INFO:root:Inserted 19168937986
+INFO:root:Inserted 19168937985
+INFO:root:Inserted 19168937977
+INFO:root:Inserted 19168937975
+INFO:root:Inserted 19168937974
+INFO:root:Inserted 19168937970
+INFO:root:Inserted 19168937969
+INFO:root:Inserted 19168937964
+INFO:root:Inserted 19168937959
+INFO:root:Inserted 19168937955
+INFO:root:Inserted 19168937953
+INFO:root:Inserted 19168937950
+INFO:root:Inserted 19168937948
+INFO:root:Inserted 19168937946
+INFO:root:Inserted 19168937939
+INFO:root:Inserted 19168937938
+INFO:root:Inserted 19168937935
+INFO:root:Inserted 19168937934
+INFO:root:Inserted 19168937933
+INFO:root:Inserted 19168937931
+INFO:root:Inserted 19168937928
+INFO:root:Inserted 19168937925
+INFO:root:Inserted 19168937923
+INFO:root:Inserted 19168937920
+INFO:root:Inserted 19168937917
+INFO:root:Inserted 19168937913
+INFO:root:Inserted 19168937911
+INFO:root:Inserted 19168937903
+INFO:root:Inserted 19168937902
+INFO:root:Inserted 19168937900
+INFO:root:Inserted 19168937898
+INFO:root:Inserted 19168937896
+INFO:root:Inserted 19168937890
+INFO:root:Inserted 19168937886
+INFO:root:Inserted 19168937884
+INFO:root:Inserted 19168937882
+INFO:root:Inserted 19168937876
+INFO:root:Inserted 19168937874
+INFO:root:Inserted 19168937873
+INFO:root:Inserted 19168937865
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-0 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:root:Inserted 19168937863
+INFO:kafka.conn:Broker version identified as 2.5.0
+INFO:kafka.conn:Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+INFO:kafka.consumer.subscription_state:Updating subscribed topics to: ('measurements',)
+INFO:root:Inserted 19168937862
+INFO:root:Inserted 19168937860
+INFO:root:Starting ingestion
+INFO:kafka.cluster:Group coordinator for ingestor is BrokerMetadata(nodeId='coordinator-0', host='localhost', port=9092, rack=None)
+INFO:kafka.coordinator:Discovered coordinator coordinator-0 for group ingestor
+INFO:kafka.coordinator:Starting new heartbeat thread
+INFO:kafka.coordinator.consumer:Revoking previously assigned partitions set() for group ingestor
+INFO:kafka.conn:<BrokerConnection node_id=coordinator-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=coordinator-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:kafka.coordinator:(Re-)joining group ingestor
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:root:Inserted 19168937857
+INFO:root:Inserted 19168937854
+WARNING:kafka.coordinator:Heartbeat failed for group ingestor because it is rebalancing
+INFO:kafka.coordinator.consumer:Revoking previously assigned partitions {TopicPartition(topic='measurements', partition=28), TopicPartition(topic='measurements', partition=31), TopicPartition(topic='measurements', partition=27), TopicPartition(topic='measurements', partition=24), TopicPartition(topic='measurements', partition=30), TopicPartition(topic='measurements', partition=23), TopicPartition(topic='measurements', partition=26), TopicPartition(topic='measurements', partition=22), TopicPartition(topic='measurements', partition=29), TopicPartition(topic='measurements', partition=25)} for group ingestor
+INFO:kafka.coordinator:(Re-)joining group ingestor
+INFO:kafka.coordinator:Successfully joined group ingestor with generation 151
+INFO:kafka.coordinator:Successfully joined group ingestor with generation 151
+INFO:kafka.consumer.subscription_state:Updated partition assignment: [TopicPartition(topic='measurements', partition=24), TopicPartition(topic='measurements', partition=25), TopicPartition(topic='measurements', partition=26), TopicPartition(topic='measurements', partition=27), TopicPartition(topic='measurements', partition=28), TopicPartition(topic='measurements', partition=29), TopicPartition(topic='measurements', partition=30), TopicPartition(topic='measurements', partition=31)]
+INFO:kafka.coordinator.consumer:Setting newly assigned partitions {TopicPartition(topic='measurements', partition=28), TopicPartition(topic='measurements', partition=31), TopicPartition(topic='measurements', partition=27), TopicPartition(topic='measurements', partition=24), TopicPartition(topic='measurements', partition=30), TopicPartition(topic='measurements', partition=26), TopicPartition(topic='measurements', partition=29), TopicPartition(topic='measurements', partition=25)} for group ingestor
+INFO:kafka.consumer.subscription_state:Updated partition assignment: [TopicPartition(topic='measurements', partition=16), TopicPartition(topic='measurements', partition=17), TopicPartition(topic='measurements', partition=18), TopicPartition(topic='measurements', partition=19), TopicPartition(topic='measurements', partition=20), TopicPartition(topic='measurements', partition=21), TopicPartition(topic='measurements', partition=22), TopicPartition(topic='measurements', partition=23)]
+INFO:kafka.coordinator.consumer:Setting newly assigned partitions {TopicPartition(topic='measurements', partition=17), TopicPartition(topic='measurements', partition=23), TopicPartition(topic='measurements', partition=20), TopicPartition(topic='measurements', partition=16), TopicPartition(topic='measurements', partition=19), TopicPartition(topic='measurements', partition=22), TopicPartition(topic='measurements', partition=18), TopicPartition(topic='measurements', partition=21)} for group ingestor
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:root:Inserted 19168937847
+INFO:root:Inserted 19168937843
+INFO:root:Inserted 19168937839
+INFO:root:Inserted 19168937840
+INFO:root:Inserted 19168937838
+INFO:root:Inserted 19168937836
+INFO:root:Inserted 19168937833
+INFO:root:Inserted 19168937832
+INFO:root:Inserted 19168937829
+INFO:root:Inserted 19168937828
+INFO:root:Inserted 19168937827
+INFO:root:Inserted 19168937826
+INFO:root:Inserted 19168937819
+INFO:root:Inserted 19168937818
+INFO:root:Inserted 19168937811
+INFO:root:Inserted 19168937810
+INFO:root:Inserted 19168937808
+INFO:root:Inserted 19168937807
+INFO:root:Inserted 19168937806
+INFO:root:Inserted 19168937805
+INFO:root:Inserted 19168937804
+INFO:root:Inserted 19168937802
+INFO:root:Inserted 19168937800
+INFO:root:Inserted 19168937798
+INFO:root:Inserted 19168937796
+INFO:root:Inserted 19168937795
+INFO:root:Inserted 19168937794
+INFO:root:Inserted 19168937793
+INFO:root:Inserted 19168937790
+INFO:root:Inserted 19168937787
+INFO:root:Inserted 19168937786
+INFO:root:Inserted 19168937784
+INFO:root:Inserted 19168937783
+INFO:root:Inserted 19168937782
+INFO:root:Inserted 19168937781
+INFO:root:Inserted 19168937779
+INFO:root:Inserted 19168937778
+INFO:root:Inserted 19168937773
+INFO:root:Inserted 19168937772
+INFO:root:Inserted 19168937771
+INFO:root:Inserted 19168937770
+INFO:kafka.coordinator:Stopping heartbeat thread
+INFO:root:Inserted 19168937764
+INFO:root:Inserted 19168937757
+INFO:root:Inserted 19168937742
+INFO:kafka.coordinator:Stopping heartbeat thread

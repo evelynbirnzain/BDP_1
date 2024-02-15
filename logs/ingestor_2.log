@@ -1,0 +1,446 @@
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-0 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:Broker version identified as 2.5.0
+INFO:kafka.conn:Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+INFO:kafka.consumer.subscription_state:Updating subscribed topics to: ('measurements',)
+INFO:root:Starting ingestion
+INFO:kafka.cluster:Group coordinator for ingestor is BrokerMetadata(nodeId='coordinator-0', host='localhost', port=9092, rack=None)
+INFO:kafka.coordinator:Discovered coordinator coordinator-0 for group ingestor
+INFO:kafka.coordinator:Starting new heartbeat thread
+INFO:kafka.coordinator.consumer:Revoking previously assigned partitions set() for group ingestor
+INFO:kafka.conn:<BrokerConnection node_id=coordinator-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=coordinator-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:kafka.coordinator:(Re-)joining group ingestor
+INFO:kafka.coordinator:Successfully joined group ingestor with generation 149
+INFO:kafka.consumer.subscription_state:Updated partition assignment: [TopicPartition(topic='measurements', partition=16), TopicPartition(topic='measurements', partition=17), TopicPartition(topic='measurements', partition=18), TopicPartition(topic='measurements', partition=19), TopicPartition(topic='measurements', partition=20), TopicPartition(topic='measurements', partition=21), TopicPartition(topic='measurements', partition=22), TopicPartition(topic='measurements', partition=23), TopicPartition(topic='measurements', partition=24), TopicPartition(topic='measurements', partition=25), TopicPartition(topic='measurements', partition=26), TopicPartition(topic='measurements', partition=27), TopicPartition(topic='measurements', partition=28), TopicPartition(topic='measurements', partition=29), TopicPartition(topic='measurements', partition=30), TopicPartition(topic='measurements', partition=31)]
+INFO:kafka.coordinator.consumer:Setting newly assigned partitions {TopicPartition(topic='measurements', partition=24), TopicPartition(topic='measurements', partition=30), TopicPartition(topic='measurements', partition=27), TopicPartition(topic='measurements', partition=16), TopicPartition(topic='measurements', partition=19), TopicPartition(topic='measurements', partition=22), TopicPartition(topic='measurements', partition=28), TopicPartition(topic='measurements', partition=25), TopicPartition(topic='measurements', partition=31), TopicPartition(topic='measurements', partition=17), TopicPartition(topic='measurements', partition=23), TopicPartition(topic='measurements', partition=20), TopicPartition(topic='measurements', partition=26), TopicPartition(topic='measurements', partition=29), TopicPartition(topic='measurements', partition=18), TopicPartition(topic='measurements', partition=21)} for group ingestor
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:root:Inserted 19168938147
+INFO:root:Inserted 19168938146
+INFO:root:Inserted 19168938145
+INFO:root:Inserted 19168938142
+INFO:root:Inserted 19168938141
+INFO:root:Inserted 19168938140
+INFO:root:Inserted 19168938138
+INFO:root:Inserted 19168938136
+INFO:root:Inserted 19168938134
+INFO:root:Inserted 19168938133
+INFO:root:Inserted 19168938132
+INFO:root:Inserted 19168938131
+INFO:root:Inserted 19168938130
+INFO:root:Inserted 19168938128
+INFO:root:Inserted 19168938124
+INFO:root:Inserted 19168938121
+INFO:root:Inserted 19168938119
+INFO:root:Inserted 19168938117
+INFO:root:Inserted 19168938115
+INFO:root:Inserted 19168938112
+INFO:root:Inserted 19168938108
+INFO:root:Inserted 19168938106
+INFO:root:Inserted 19168938104
+INFO:root:Inserted 19168938101
+INFO:root:Inserted 19168938098
+INFO:root:Inserted 19168938097
+INFO:root:Inserted 19168938092
+INFO:root:Inserted 19168938091
+INFO:root:Inserted 19168938089
+INFO:root:Inserted 19168938088
+INFO:root:Inserted 19168938086
+INFO:root:Inserted 19168938085
+INFO:root:Inserted 19168938084
+INFO:root:Inserted 19168938083
+INFO:root:Inserted 19168938082
+INFO:root:Inserted 19168938081
+INFO:root:Inserted 19168938080
+INFO:root:Inserted 19168938079
+INFO:root:Inserted 19168938077
+INFO:root:Inserted 19168938075
+INFO:root:Inserted 19168938074
+INFO:root:Inserted 19168938073
+INFO:root:Inserted 19168938070
+INFO:root:Inserted 19168938069
+INFO:root:Inserted 19168938068
+INFO:root:Inserted 19168938067
+INFO:root:Inserted 19168938064
+INFO:root:Inserted 19168938062
+INFO:root:Inserted 19168938061
+INFO:root:Inserted 19168938058
+INFO:root:Inserted 19168938057
+INFO:root:Inserted 19168938056
+INFO:root:Inserted 19168938055
+INFO:root:Inserted 19168938054
+INFO:root:Inserted 19168938053
+INFO:root:Inserted 19168938048
+INFO:root:Inserted 19168938042
+INFO:root:Inserted 19168938040
+INFO:root:Inserted 19168938036
+INFO:root:Inserted 19168938035
+INFO:root:Inserted 19168938031
+INFO:root:Inserted 19168938030
+INFO:root:Inserted 19168938029
+WARNING:kafka.coordinator:Heartbeat failed for group ingestor because it is rebalancing
+INFO:kafka.coordinator.consumer:Revoking previously assigned partitions {TopicPartition(topic='measurements', partition=24), TopicPartition(topic='measurements', partition=30), TopicPartition(topic='measurements', partition=27), TopicPartition(topic='measurements', partition=17), TopicPartition(topic='measurements', partition=23), TopicPartition(topic='measurements', partition=20), TopicPartition(topic='measurements', partition=26), TopicPartition(topic='measurements', partition=16), TopicPartition(topic='measurements', partition=29), TopicPartition(topic='measurements', partition=19), TopicPartition(topic='measurements', partition=22), TopicPartition(topic='measurements', partition=28), TopicPartition(topic='measurements', partition=18), TopicPartition(topic='measurements', partition=25), TopicPartition(topic='measurements', partition=31), TopicPartition(topic='measurements', partition=21)} for group ingestor
+INFO:kafka.coordinator:(Re-)joining group ingestor
+INFO:kafka.coordinator:Successfully joined group ingestor with generation 150
+INFO:kafka.consumer.subscription_state:Updated partition assignment: [TopicPartition(topic='measurements', partition=11), TopicPartition(topic='measurements', partition=12), TopicPartition(topic='measurements', partition=13), TopicPartition(topic='measurements', partition=14), TopicPartition(topic='measurements', partition=15), TopicPartition(topic='measurements', partition=16), TopicPartition(topic='measurements', partition=17), TopicPartition(topic='measurements', partition=18), TopicPartition(topic='measurements', partition=19), TopicPartition(topic='measurements', partition=20), TopicPartition(topic='measurements', partition=21)]
+INFO:kafka.coordinator.consumer:Setting newly assigned partitions {TopicPartition(topic='measurements', partition=14), TopicPartition(topic='measurements', partition=17), TopicPartition(topic='measurements', partition=20), TopicPartition(topic='measurements', partition=16), TopicPartition(topic='measurements', partition=13), TopicPartition(topic='measurements', partition=19), TopicPartition(topic='measurements', partition=12), TopicPartition(topic='measurements', partition=18), TopicPartition(topic='measurements', partition=15), TopicPartition(topic='measurements', partition=21), TopicPartition(topic='measurements', partition=11)} for group ingestor
+INFO:root:Inserted 19168938024
+INFO:root:Inserted 19168938020
+INFO:root:Inserted 19168938014
+INFO:root:Inserted 19168938012
+INFO:root:Inserted 19168938010
+INFO:root:Inserted 19168938008
+INFO:root:Inserted 19168938006
+INFO:root:Inserted 19168938005
+INFO:root:Inserted 19168938001
+INFO:root:Inserted 19168937999
+INFO:root:Inserted 19168937998
+INFO:root:Inserted 19168937997
+INFO:root:Inserted 19168937992
+INFO:root:Inserted 19168937988
+INFO:root:Inserted 19168937987
+INFO:root:Inserted 19168937984
+INFO:root:Inserted 19168937983
+INFO:root:Inserted 19168937982
+INFO:root:Inserted 19168937973
+INFO:root:Inserted 19168937968
+INFO:root:Inserted 19168937966
+INFO:root:Inserted 19168937961
+INFO:root:Inserted 19168937960
+INFO:root:Inserted 19168937956
+INFO:root:Inserted 19168937952
+INFO:root:Inserted 19168937951
+INFO:root:Inserted 19168937949
+INFO:root:Inserted 19168937947
+INFO:root:Inserted 19168937942
+INFO:root:Inserted 19168937940
+INFO:root:Inserted 19168937930
+INFO:root:Inserted 19168937927
+INFO:root:Inserted 19168937926
+INFO:root:Inserted 19168937918
+INFO:root:Inserted 19168937915
+INFO:root:Inserted 19168937914
+INFO:root:Inserted 19168937912
+INFO:root:Inserted 19168937910
+INFO:root:Inserted 19168937909
+INFO:root:Inserted 19168937906
+INFO:root:Inserted 19168937905
+INFO:root:Inserted 19168937901
+INFO:root:Inserted 19168937893
+INFO:root:Inserted 19168937891
+INFO:root:Inserted 19168937889
+INFO:root:Inserted 19168937885
+INFO:root:Inserted 19168937878
+INFO:root:Inserted 19168937872
+INFO:root:Inserted 19168937871
+INFO:root:Inserted 19168937869
+INFO:root:Inserted 19168937868
+INFO:root:Inserted 19168937859
+INFO:root:Inserted 19168937858
+INFO:root:Inserted 19168937856
+INFO:root:Inserted 19168937852
+WARNING:kafka.coordinator:Heartbeat failed for group ingestor because it is rebalancing
+INFO:kafka.coordinator.consumer:Revoking previously assigned partitions {TopicPartition(topic='measurements', partition=14), TopicPartition(topic='measurements', partition=17), TopicPartition(topic='measurements', partition=20), TopicPartition(topic='measurements', partition=16), TopicPartition(topic='measurements', partition=13), TopicPartition(topic='measurements', partition=19), TopicPartition(topic='measurements', partition=12), TopicPartition(topic='measurements', partition=18), TopicPartition(topic='measurements', partition=15), TopicPartition(topic='measurements', partition=21), TopicPartition(topic='measurements', partition=11)} for group ingestor
+INFO:kafka.coordinator:(Re-)joining group ingestor
+INFO:kafka.coordinator:Successfully joined group ingestor with generation 151
+INFO:kafka.consumer.subscription_state:Updated partition assignment: [TopicPartition(topic='measurements', partition=8), TopicPartition(topic='measurements', partition=9), TopicPartition(topic='measurements', partition=10), TopicPartition(topic='measurements', partition=11), TopicPartition(topic='measurements', partition=12), TopicPartition(topic='measurements', partition=13), TopicPartition(topic='measurements', partition=14), TopicPartition(topic='measurements', partition=15)]
+INFO:kafka.coordinator.consumer:Setting newly assigned partitions {TopicPartition(topic='measurements', partition=8), TopicPartition(topic='measurements', partition=14), TopicPartition(topic='measurements', partition=10), TopicPartition(topic='measurements', partition=13), TopicPartition(topic='measurements', partition=9), TopicPartition(topic='measurements', partition=12), TopicPartition(topic='measurements', partition=15), TopicPartition(topic='measurements', partition=11)} for group ingestor
+INFO:root:Inserted 19168937844
+INFO:root:Inserted 19168937842
+INFO:root:Inserted 19168937841
+INFO:root:Inserted 19168937837
+INFO:root:Inserted 19168937835
+INFO:root:Inserted 19168937834
+INFO:root:Inserted 19168937830
+INFO:root:Inserted 19168937825
+INFO:root:Inserted 19168937823
+INFO:root:Inserted 19168937820
+INFO:root:Inserted 19168937814
+INFO:root:Inserted 19168937813
+INFO:root:Inserted 19168937809
+INFO:root:Inserted 19168937801
+INFO:root:Inserted 19168937792
+INFO:root:Inserted 19168937776
+INFO:root:Inserted 19168937774
+INFO:root:Inserted 19168937766
+INFO:root:Inserted 19168937762
+INFO:root:Inserted 19168937761
+INFO:root:Inserted 19168937759
+INFO:root:Inserted 19168937756
+INFO:root:Inserted 19168937755
+INFO:root:Inserted 19168937754
+INFO:root:Inserted 19168937748
+INFO:root:Inserted 19168937744
+INFO:root:Inserted 19168937743
+INFO:root:Inserted 19168937740
+INFO:root:Inserted 19168937730
+INFO:root:Inserted 19168937729
+INFO:root:Inserted 19168937725
+INFO:root:Inserted 19168937722
+INFO:root:Inserted 19168937720
+INFO:root:Inserted 19168937713
+INFO:root:Inserted 19168937709
+INFO:root:Inserted 19168937703
+INFO:root:Inserted 19168937698
+INFO:root:Inserted 19168937689
+INFO:root:Inserted 19168937679
+WARNING:kafka.coordinator:Heartbeat failed for group ingestor because it is rebalancing
+INFO:kafka.coordinator.consumer:Revoking previously assigned partitions {TopicPartition(topic='measurements', partition=8), TopicPartition(topic='measurements', partition=14), TopicPartition(topic='measurements', partition=10), TopicPartition(topic='measurements', partition=13), TopicPartition(topic='measurements', partition=9), TopicPartition(topic='measurements', partition=12), TopicPartition(topic='measurements', partition=15), TopicPartition(topic='measurements', partition=11)} for group ingestor
+INFO:kafka.coordinator:(Re-)joining group ingestor
+INFO:kafka.coordinator:Successfully joined group ingestor with generation 152
+INFO:kafka.consumer.subscription_state:Updated partition assignment: [TopicPartition(topic='measurements', partition=16), TopicPartition(topic='measurements', partition=17), TopicPartition(topic='measurements', partition=18), TopicPartition(topic='measurements', partition=19), TopicPartition(topic='measurements', partition=20), TopicPartition(topic='measurements', partition=21), TopicPartition(topic='measurements', partition=22), TopicPartition(topic='measurements', partition=23), TopicPartition(topic='measurements', partition=24), TopicPartition(topic='measurements', partition=25), TopicPartition(topic='measurements', partition=26), TopicPartition(topic='measurements', partition=27), TopicPartition(topic='measurements', partition=28), TopicPartition(topic='measurements', partition=29), TopicPartition(topic='measurements', partition=30), TopicPartition(topic='measurements', partition=31)]
+INFO:kafka.coordinator.consumer:Setting newly assigned partitions {TopicPartition(topic='measurements', partition=24), TopicPartition(topic='measurements', partition=30), TopicPartition(topic='measurements', partition=27), TopicPartition(topic='measurements', partition=16), TopicPartition(topic='measurements', partition=19), TopicPartition(topic='measurements', partition=22), TopicPartition(topic='measurements', partition=28), TopicPartition(topic='measurements', partition=25), TopicPartition(topic='measurements', partition=31), TopicPartition(topic='measurements', partition=17), TopicPartition(topic='measurements', partition=23), TopicPartition(topic='measurements', partition=20), TopicPartition(topic='measurements', partition=26), TopicPartition(topic='measurements', partition=29), TopicPartition(topic='measurements', partition=18), TopicPartition(topic='measurements', partition=21)} for group ingestor
+INFO:root:Inserted 19168937795
+INFO:root:Inserted 19168937710
+INFO:root:Inserted 19168937672
+INFO:root:Inserted 19168937742
+INFO:root:Inserted 19168937732
+INFO:root:Inserted 19168937727
+INFO:root:Inserted 19168937704
+INFO:root:Inserted 19168937683
+INFO:root:Inserted 19168937674
+INFO:root:Inserted 19168937670
+INFO:root:Inserted 19168937738
+INFO:root:Inserted 19168937724
+INFO:root:Inserted 19168937677
+INFO:root:Inserted 19168937702
+INFO:root:Inserted 19168937700
+INFO:root:Inserted 19168937669
+INFO:root:Inserted 19168937668
+INFO:root:Inserted 19168937660
+INFO:root:Inserted 19168937656
+INFO:root:Inserted 19168937790
+INFO:root:Inserted 19168937763
+INFO:root:Inserted 19168937753
+INFO:root:Inserted 19168937749
+INFO:root:Inserted 19168937747
+INFO:root:Inserted 19168937719
+INFO:root:Inserted 19168937711
+INFO:root:Inserted 19168937731
+INFO:root:Inserted 19168937726
+INFO:root:Inserted 19168937708
+INFO:root:Inserted 19168937678
+INFO:root:Inserted 19168937746
+INFO:root:Inserted 19168937723
+INFO:root:Inserted 19168937717
+INFO:root:Inserted 19168937694
+INFO:root:Inserted 19168937690
+INFO:root:Inserted 19168937665
+INFO:root:Inserted 19168937712
+INFO:root:Inserted 19168937681
+INFO:root:Inserted 19168937680
+INFO:root:Inserted 19168937655
+INFO:root:Inserted 19168937752
+INFO:root:Inserted 19168937734
+INFO:root:Inserted 19168937696
+INFO:root:Inserted 19168937691
+INFO:root:Inserted 19168937769
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:Probing node bootstrap-0 broker version
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:root:Inserted 19168937735
+INFO:root:Inserted 19168937695
+INFO:kafka.conn:Broker version identified as 2.5.0
+INFO:kafka.conn:Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+INFO:kafka.consumer.subscription_state:Updating subscribed topics to: ('measurements',)
+INFO:root:Inserted 19168937688
+INFO:root:Inserted 19168937685
+INFO:root:Starting ingestion
+INFO:kafka.cluster:Group coordinator for ingestor is BrokerMetadata(nodeId='coordinator-0', host='localhost', port=9092, rack=None)
+INFO:kafka.coordinator:Discovered coordinator coordinator-0 for group ingestor
+INFO:kafka.coordinator:Starting new heartbeat thread
+INFO:kafka.coordinator.consumer:Revoking previously assigned partitions set() for group ingestor
+INFO:kafka.conn:<BrokerConnection node_id=coordinator-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=coordinator-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+INFO:root:Inserted 19168937783
+INFO:root:Inserted 19168937782
+INFO:kafka.coordinator:(Re-)joining group ingestor
+INFO:root:Inserted 19168937781
+INFO:root:Inserted 19168937716
+INFO:root:Inserted 19168937707
+INFO:root:Inserted 19168937692
+INFO:root:Inserted 19168937676
+INFO:root:Inserted 19168937714
+INFO:root:Inserted 19168937659
+INFO:root:Inserted 19168937701
+INFO:root:Inserted 19168937662
+INFO:root:Inserted 19168937657
+INFO:root:Inserted 19168937705
+INFO:root:Inserted 19168937699
+INFO:root:Inserted 19168937693
+INFO:root:Inserted 19168937666
+INFO:root:Inserted 19168937661
+INFO:root:Inserted 19168937645
+INFO:root:Inserted 19168937628
+INFO:root:Inserted 19168937627
+INFO:root:Inserted 19168937638
+INFO:root:Inserted 19168937625
+INFO:root:Inserted 19168937649
+INFO:root:Inserted 19168937643
+INFO:root:Inserted 19168937639
+INFO:root:Inserted 19168937631
+INFO:root:Inserted 19168937618
+INFO:root:Inserted 19168937646
+INFO:root:Inserted 19168937644
+INFO:root:Inserted 19168937624
+INFO:root:Inserted 19168937619
+INFO:root:Inserted 19168937612
+INFO:root:Inserted 19168937626
+INFO:root:Inserted 19168937608
+WARNING:kafka.coordinator:Heartbeat failed for group ingestor because it is rebalancing
+INFO:root:Inserted 19168937634
+INFO:root:Inserted 19168937630
+INFO:root:Inserted 19168937623
+INFO:root:Inserted 19168937610
+INFO:root:Inserted 19168937642
+INFO:root:Inserted 19168937648
+INFO:kafka.coordinator.consumer:Revoking previously assigned partitions {TopicPartition(topic='measurements', partition=24), TopicPartition(topic='measurements', partition=30), TopicPartition(topic='measurements', partition=27), TopicPartition(topic='measurements', partition=17), TopicPartition(topic='measurements', partition=23), TopicPartition(topic='measurements', partition=20), TopicPartition(topic='measurements', partition=26), TopicPartition(topic='measurements', partition=16), TopicPartition(topic='measurements', partition=29), TopicPartition(topic='measurements', partition=19), TopicPartition(topic='measurements', partition=22), TopicPartition(topic='measurements', partition=28), TopicPartition(topic='measurements', partition=18), TopicPartition(topic='measurements', partition=25), TopicPartition(topic='measurements', partition=31), TopicPartition(topic='measurements', partition=21)} for group ingestor
+INFO:kafka.coordinator:(Re-)joining group ingestor
+INFO:kafka.coordinator:Successfully joined group ingestor with generation 153
+INFO:kafka.coordinator:Successfully joined group ingestor with generation 153
+INFO:kafka.consumer.subscription_state:Updated partition assignment: [TopicPartition(topic='measurements', partition=22), TopicPartition(topic='measurements', partition=23), TopicPartition(topic='measurements', partition=24), TopicPartition(topic='measurements', partition=25), TopicPartition(topic='measurements', partition=26), TopicPartition(topic='measurements', partition=27), TopicPartition(topic='measurements', partition=28), TopicPartition(topic='measurements', partition=29), TopicPartition(topic='measurements', partition=30), TopicPartition(topic='measurements', partition=31)]
+INFO:kafka.coordinator.consumer:Setting newly assigned partitions {TopicPartition(topic='measurements', partition=24), TopicPartition(topic='measurements', partition=30), TopicPartition(topic='measurements', partition=27), TopicPartition(topic='measurements', partition=23), TopicPartition(topic='measurements', partition=26), TopicPartition(topic='measurements', partition=29), TopicPartition(topic='measurements', partition=22), TopicPartition(topic='measurements', partition=28), TopicPartition(topic='measurements', partition=25), TopicPartition(topic='measurements', partition=31)} for group ingestor
+INFO:kafka.consumer.subscription_state:Updated partition assignment: [TopicPartition(topic='measurements', partition=0), TopicPartition(topic='measurements', partition=1), TopicPartition(topic='measurements', partition=2), TopicPartition(topic='measurements', partition=3), TopicPartition(topic='measurements', partition=4), TopicPartition(topic='measurements', partition=5), TopicPartition(topic='measurements', partition=6), TopicPartition(topic='measurements', partition=7), TopicPartition(topic='measurements', partition=8), TopicPartition(topic='measurements', partition=9), TopicPartition(topic='measurements', partition=10)]
+INFO:kafka.coordinator.consumer:Setting newly assigned partitions {TopicPartition(topic='measurements', partition=4), TopicPartition(topic='measurements', partition=10), TopicPartition(topic='measurements', partition=0), TopicPartition(topic='measurements', partition=3), TopicPartition(topic='measurements', partition=9), TopicPartition(topic='measurements', partition=6), TopicPartition(topic='measurements', partition=2), TopicPartition(topic='measurements', partition=5), TopicPartition(topic='measurements', partition=8), TopicPartition(topic='measurements', partition=1), TopicPartition(topic='measurements', partition=7)} for group ingestor
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+INFO:kafka.conn:<BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+INFO:root:Inserted 19168937603
+INFO:root:Inserted 19168937606
+INFO:root:Inserted 19168937594
+INFO:root:Inserted 19168937602
+INFO:root:Inserted 19168937591
+INFO:root:Inserted 19168937589
+INFO:root:Inserted 19168937598
+INFO:root:Inserted 19168937593
+INFO:root:Inserted 19168937597
+INFO:root:Inserted 19168937592
+INFO:root:Inserted 19168937585
+INFO:root:Inserted 19168937595
+INFO:root:Inserted 19168937584
+INFO:root:Inserted 19168937596
+INFO:root:Inserted 19168937588
+INFO:root:Inserted 19168937583
+INFO:root:Inserted 19168937581
+INFO:root:Inserted 19168937580
+INFO:root:Inserted 19168937579
+INFO:root:Inserted 19168937578
+INFO:root:Inserted 19168937576
+INFO:root:Inserted 19168937573
+INFO:root:Inserted 19168937572
+INFO:root:Inserted 19168937570
+INFO:root:Inserted 19168937567
+INFO:root:Inserted 19168937564
+INFO:root:Inserted 19168937563
+INFO:root:Inserted 19168937560
+INFO:root:Inserted 19168937559
+INFO:root:Inserted 19168937558
+INFO:root:Inserted 19168937557
+INFO:root:Inserted 19168937556
+INFO:root:Inserted 19168937555
+INFO:root:Inserted 19168937551
+INFO:root:Inserted 19168937550
+INFO:root:Inserted 19168937549
+INFO:root:Inserted 19168937545
+INFO:root:Inserted 19168937544
+INFO:root:Inserted 19168937543
+INFO:root:Inserted 19168937541
+INFO:root:Inserted 19168937539
+INFO:root:Inserted 19168937538
+INFO:root:Inserted 19168937535
+INFO:root:Inserted 19168937534
+INFO:root:Inserted 19168937533
+INFO:root:Inserted 19168937531
+INFO:root:Inserted 19168937529
+INFO:root:Inserted 19168937527
+INFO:root:Inserted 19168937525
+INFO:root:Inserted 19168937524
+INFO:root:Inserted 19168937520
+INFO:kafka.coordinator:Stopping heartbeat thread
+INFO:root:Inserted 19168937515
+INFO:root:Inserted 19168937510
+INFO:root:Inserted 19168937509
+INFO:root:Inserted 19168937508
+INFO:root:Inserted 19168937503
+INFO:root:Inserted 19168937501
+INFO:root:Inserted 19168937499
+INFO:root:Inserted 19168937497
+INFO:root:Inserted 19168937496
+INFO:root:Inserted 19168937495
+INFO:root:Inserted 19168937490
+INFO:root:Inserted 19168937486
+INFO:root:Inserted 19168937484
+INFO:root:Inserted 19168937482
+INFO:root:Inserted 19168937479
+INFO:root:Inserted 19168937476
+INFO:root:Inserted 19168937474
+INFO:root:Inserted 19168937472
+INFO:root:Inserted 19168937468
+INFO:root:Inserted 19168937466
+INFO:root:Inserted 19168937465
+INFO:root:Inserted 19168938147
+INFO:root:Inserted 19168937461
+INFO:root:Inserted 19168937460
+INFO:root:Inserted 19168938145
+INFO:root:Inserted 19168938144
+INFO:root:Inserted 19168937456
+INFO:root:Inserted 19168937451
+INFO:root:Inserted 19168937450
+INFO:root:Inserted 19168937449
+INFO:root:Inserted 19168937445
+INFO:root:Inserted 19168938131
+INFO:root:Inserted 19168937437
+INFO:root:Inserted 19168938123
+INFO:root:Inserted 19168938122
+INFO:root:Inserted 19168937435
+INFO:root:Inserted 19168938119
+INFO:root:Inserted 19168938118
+INFO:root:Inserted 19168937431
+INFO:root:Inserted 19168938116
+INFO:root:Inserted 19168938115
+INFO:root:Inserted 19168937428
+INFO:root:Inserted 19168937423
+INFO:root:Inserted 19168938108
+INFO:root:Inserted 19168937418
+INFO:root:Inserted 19168938104
+WARNING:kafka.coordinator:Heartbeat failed for group ingestor because it is rebalancing
+INFO:kafka.coordinator.consumer:Revoking previously assigned partitions {TopicPartition(topic='measurements', partition=24), TopicPartition(topic='measurements', partition=30), TopicPartition(topic='measurements', partition=27), TopicPartition(topic='measurements', partition=23), TopicPartition(topic='measurements', partition=26), TopicPartition(topic='measurements', partition=29), TopicPartition(topic='measurements', partition=22), TopicPartition(topic='measurements', partition=28), TopicPartition(topic='measurements', partition=25), TopicPartition(topic='measurements', partition=31)} for group ingestor
+INFO:kafka.coordinator:(Re-)joining group ingestor
+INFO:kafka.coordinator:Successfully joined group ingestor with generation 154
+INFO:kafka.consumer.subscription_state:Updated partition assignment: [TopicPartition(topic='measurements', partition=16), TopicPartition(topic='measurements', partition=17), TopicPartition(topic='measurements', partition=18), TopicPartition(topic='measurements', partition=19), TopicPartition(topic='measurements', partition=20), TopicPartition(topic='measurements', partition=21), TopicPartition(topic='measurements', partition=22), TopicPartition(topic='measurements', partition=23), TopicPartition(topic='measurements', partition=24), TopicPartition(topic='measurements', partition=25), TopicPartition(topic='measurements', partition=26), TopicPartition(topic='measurements', partition=27), TopicPartition(topic='measurements', partition=28), TopicPartition(topic='measurements', partition=29), TopicPartition(topic='measurements', partition=30), TopicPartition(topic='measurements', partition=31)]
+INFO:kafka.coordinator.consumer:Setting newly assigned partitions {TopicPartition(topic='measurements', partition=24), TopicPartition(topic='measurements', partition=30), TopicPartition(topic='measurements', partition=27), TopicPartition(topic='measurements', partition=16), TopicPartition(topic='measurements', partition=19), TopicPartition(topic='measurements', partition=22), TopicPartition(topic='measurements', partition=28), TopicPartition(topic='measurements', partition=25), TopicPartition(topic='measurements', partition=31), TopicPartition(topic='measurements', partition=17), TopicPartition(topic='measurements', partition=23), TopicPartition(topic='measurements', partition=20), TopicPartition(topic='measurements', partition=26), TopicPartition(topic='measurements', partition=29), TopicPartition(topic='measurements', partition=18), TopicPartition(topic='measurements', partition=21)} for group ingestor
+INFO:root:Inserted 19168938102
+INFO:root:Inserted 19168937415
+INFO:root:Inserted 19168938103
+INFO:root:Inserted 19168938101
+INFO:root:Inserted 19168937410
+INFO:root:Inserted 19168938097
+INFO:root:Inserted 19168938096
+INFO:root:Inserted 19168938095
+INFO:root:Inserted 19168937406
+INFO:root:Inserted 19168937405
+INFO:root:Inserted 19168937403
+INFO:root:Inserted 19168938091
+INFO:root:Inserted 19168938090
+INFO:root:Inserted 19168937401
+INFO:root:Inserted 19168937399
+INFO:root:Inserted 19168937398
+INFO:root:Inserted 19168938082
+INFO:root:Inserted 19168938081
+INFO:root:Inserted 19168937391
+INFO:root:Inserted 19168938076
+INFO:root:Inserted 19168937387
+INFO:root:Inserted 19168938074
+INFO:root:Inserted 19168937385
+INFO:root:Inserted 19168938073
+INFO:root:Inserted 19168937384
+INFO:root:Inserted 19168938071
+INFO:root:Inserted 19168938070
+INFO:root:Inserted 19168937381
+INFO:root:Inserted 19168937379
+INFO:root:Inserted 19168938067
+INFO:root:Inserted 19168937377
+INFO:kafka.coordinator:Stopping heartbeat thread
